@@ -1,0 +1,27 @@
+@import '../../assets/style/mixin.scss';
+.dishe-box{
+    flex: 1 0 33.3%;
+    background: #f3cf2d;
+    border: 1px solid;
+    transition: all .3s liner;
+    text-align: center;
+    padding: 30px 0;
+    @include screen(993px){
+        flex-basis: 50%;
+    }
+    @include screen(569px){
+        flex-basis: 100%;
+    }
+    .dishe-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 300px;height: 300px;
+            @include screen(993px){
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}

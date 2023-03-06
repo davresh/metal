@@ -1,0 +1,108 @@
+@import '../../assets/style/mixin.scss';
+.metal-carousel{
+    width: 300%;
+    min-width: 100%;
+    display: flex;
+    transform: translateX(-100%);
+    .metal-carusel{
+        flex: 1 0 100%;
+        min-width: 300px;
+        position: relative;
+        h1{
+            font-size: 50px;
+            text-transform: uppercase;
+            @include screen(769px){
+                font-size: 25px;
+            }
+            .text-metal{
+                color: white;
+                font-size: 60px;
+                @include screen(769px){
+                    font-size: 35px;
+                }
+                @include screen(426px){
+                    font-size: 25px;
+                }
+            }
+        }
+        p{
+            max-width: 600px;
+            min-width: 300px;
+            color: white;
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 1px;
+            margin: 30px 0;
+        }
+        .button-data{
+            width: 100%;
+            button{
+                width: 180px;height: 50px;
+                text-align: center;
+                border: none;
+                outline: 0;
+                font-size: 18px;
+                cursor: pointer;
+                border-radius: 5px;
+                margin-right: 10px;
+                color: white;
+                background: #000;
+                text-transform: uppercase;
+                transition: all .5s;
+                @include screen(769px){
+                    font-size: 14px;
+                    width: 150px;
+                }
+                @include screen(426px){
+                    margin-bottom: 10px;
+                }
+                &:hover{
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+    
+        }
+        strong{
+            width: 50px; height: 50px;
+            background: #000;
+            color: white;
+            position: absolute;
+            top:15%;right: 10%;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            @include screen(769px){
+                top: 0;
+                right: 20px;
+            }
+        }
+    }
+}
+.button-slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    span{
+        color: white;
+        padding: 20px 23px;
+        border-radius: 50%;
+        border: 1px solid white;
+        cursor: pointer;
+        margin-left: 5px;
+        transition: all .5s;
+        &:hover{
+            background: #000;
+            color: white;
+        }
+    }
+}
+.slide-left{
+    transition: all .5s linear;
+    transform: translateX(-200%);
+}
+.slide-right{
+    transition: all .5s linear;
+    transform: translateX(0%);
+}

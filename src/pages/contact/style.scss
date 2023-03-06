@@ -1,0 +1,62 @@
+@import '../../assets/style/mixin.scss';
+.contact-page{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    padding: 50px 0;
+    .contact-row{
+        width: 1140px;
+        min-width: 300px;
+        background: #f3cf2d;
+        color: white;
+        padding: 0 10px 50px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .input-contact-box{
+            width: 900px;
+            text-align: center;
+        }
+        h1{
+            font-size: 45px;
+            padding: 50px 0;
+            font-weight: 900;
+            @include screen(569px){
+                font-size: 30px;
+            }
+        }
+        p{
+            margin-bottom: 25px;
+            text-align-last: left;
+        }
+        input,textarea{
+            border: none;
+            outline: 0;
+            width: 100%;
+            min-width: 300px;
+            font-size: 20px;
+            
+            padding: 20px;
+        }
+        textarea{
+            height: 200px;
+        }
+        button{
+            border: 0;
+            color: white;
+            background: #000;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 15px 60px;
+            cursor: pointer;
+            transition: all .4s linear;
+            &:hover{
+                color: black;
+                background-color: #ccc;
+            }
+        }
+    }
+}
